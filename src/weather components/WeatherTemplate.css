@@ -1,0 +1,295 @@
+.weather-container{
+
+    margin:5rem auto;
+    width: 40rem;
+    background-color: rgba(104, 6, 35, 0.377);
+    height:25rem;
+    border-radius: 20px;
+    display: flex;
+    transition: all 300ms;
+    cursor:pointer;
+
+}
+.weather-container:hover{
+    /* padding:8px; */
+   
+    transform:scale(1.1);
+    box-shadow: 0px 0px 1rem 0.5rem rgba(255, 255, 255, 0.316);
+    transition: all 600ms;
+}
+.left{
+    /* background-color: blueviolet; */
+    width:38%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:hidden
+}
+.icon{
+    height: 50%;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    border-radius: 20px 0px 0px 0px ;
+    
+}
+.icon span{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.temp{
+    height: 50%;
+    background-color: rgb(252, 252, 252);
+    width: 100%;
+    border-radius:0px 0px 0px 20px;
+    color:rgb(16, 3, 3);
+    font-size: 3.8rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 3px 8px  rgba(194, 186, 186, 0.782);
+}
+.temp span{
+    font-size: 2rem;
+}
+.right{
+
+    width:62%;
+    height:100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+.right-top{
+    width:100%;
+    height:25%;
+    display: flex;
+}
+.state{
+    width:35%;
+    height:100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    background-color: rgba(37, 80, 124, 0.933);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    /* border: 1px solid ; */
+    color:white
+
+}
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:65%;
+    font-size: 2rem;
+    text-align: center;
+    background-color: darkslategray;
+    font-weight:500;
+    color:white;
+    border-radius: 0px 20px 0px 0px;
+    /* border: 1px solid ; */
+
+
+}
+.right-middle{
+    /* background-color: bisque; */
+    width:100%;
+    height:35%;
+    display:flex;
+
+}
+.wind{
+    width:50%;
+    height:100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid ;
+    border-left: 1px solid darkslategray;
+
+    background:rgb(242, 239, 239);
+    color: darkslategray;
+    
+
+}
+.wind span{
+    font-size: 1.8rem;
+    margin-top: 0.2rem;
+    font-weight: 500;
+}
+.wind2{
+    width:50%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.631);
+    display: flex;
+    color:white;
+    flex-direction: column;
+    border-top: 1px solid darkslategray;
+    border-left: 1px solid darkslategray;
+    border-right: 1px solid darkslategray;
+
+    font-size: 1.8rem;
+    font-weight: 500;
+    
+
+}
+.wind2 span{
+    margin-top: 0.2rem;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wind-icon{
+    height:50%;
+    /* background-color: white; */
+    width:100%
+
+}
+.wind-value{
+    height:50%;
+    /* background-color: blueviolet; */
+
+}
+.right-bottom{
+    border-top: 1px solid darkslategray;
+    border-left: 1px solid darkslategray;
+    border-radius: 0px 0px 20px 0px;
+    width:100%;
+    height:45%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(37, 80, 124, 0.933);
+    color: white;
+}
+.humidity,.sunset,.sunrise{
+    width:33.33%;
+    flex-direction: column;
+    border-right:1px solid darkslategray
+}
+.humidity span,.sunset span,.sunrise span{
+    
+    margin-top: 0.3rem;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.humidity span{
+    color:white
+}
+.right-bottom .sunset{
+    border:none
+}
+.sunset,.sunrise{
+    background-color: bisque;
+    color: darkslategray;
+
+    
+}
+.sunset{
+    border-radius:0px 0px 20px 0px
+}
+.wi{
+    font-size: 3.5rem;
+}
+
+@media only screen and (max-width :1200px) {
+    .weather-container{
+
+        margin:5rem auto;
+        width: 33.5rem;
+        background-color: rgba(104, 6, 35, 0.377);
+        height:20rem;
+        border-radius: 20px;
+        display: flex;
+        transition: all 300ms;
+        cursor:pointer;
+    
+    }
+    .wi{
+        font-size: 2.5rem;
+    }
+    .date{
+        font-size: 1.6rem;
+    }
+    .temp{
+        font-size: 2.5rem;
+    } 
+    
+    .temp span{
+        font-size: 2rem;
+    }
+    .search{
+        width:18rem;
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width :700px) {
+    .weather-container{
+
+        margin:5rem auto;
+        width: 15rem;
+        background-color: rgba(104, 6, 35, 0.377);
+        height:40rem;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        transition: all 300ms;
+        cursor:pointer;
+    
+    }
+    .left,.right{
+        width: 100%;
+    }
+    .state{
+        font-size: 0.8rem;
+    }
+    .wi{
+        font-size: 1.8rem;
+    }
+    .date{
+        border-radius: 0px;
+        font-size: 1.2rem;
+    }
+    .temp{
+        border-radius: 0px;
+        font-size: 2.5rem;
+    } 
+    
+    .temp span{
+        font-size: 2rem;
+    }
+    .humidity{
+        border-radius: 0px 0px 0px 20px;
+    }
+    .right-bottom{
+        border-radius: 0px 0px 20px 20px;
+
+    }
+    .search{
+        width:11rem;
+        font-size: 1rem;
+    }
+    .weather-header{
+        font-size: 1.5rem;
+    }
+    .icon{
+        border-radius: 20px 20px 0px 0px ;
+    }
+    .weather-container:hover{
+        /* padding:8px; */
+       
+        transform:scale(1.05);
+        box-shadow: 0px 0px 1rem 0.5rem rgba(255, 255, 255, 0.316);
+        transition: all 600ms;
+    }
+}
